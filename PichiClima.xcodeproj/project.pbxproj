@@ -14,6 +14,11 @@
 		9405B81F1BC080AC00F8D50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9405B81D1BC080AC00F8D50B /* LaunchScreen.storyboard */; };
 		9405B82A1BC080AC00F8D50B /* PichiClimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8291BC080AC00F8D50B /* PichiClimaTests.swift */; };
 		9405B8351BC080AC00F8D50B /* PichiClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */; };
+		9436CB511BC083CC0033D6B2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */; };
+		9436CB521BC083CC0033D6B2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */; };
+		9436CB551BC0851A0033D6B2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436CB541BC0851A0033D6B2 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
+		9436CB571BC08AAD0033D6B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB561BC08AAD0033D6B2 /* MapKit.framework */; };
+		ED773779B7ECBEBD49281991 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0A1A27EA915B2A1D10CB81 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,13 @@
 		9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichiClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PichiClimaUITests.swift; sourceTree = "<group>"; };
 		9405B8361BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		9436CB541BC0851A0033D6B2 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		9436CB561BC08AAD0033D6B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DBF3E54D9D4F0619EAC8D5B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		FD0A1A27EA915B2A1D10CB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF1BC68D2614E54ED3BD3A30 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9436CB511BC083CC0033D6B2 /* Alamofire.framework in Frameworks */,
+				9436CB521BC083CC0033D6B2 /* SwiftyJSON.framework in Frameworks */,
+				9436CB571BC08AAD0033D6B2 /* MapKit.framework in Frameworks */,
+				ED773779B7ECBEBD49281991 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				9405B8281BC080AC00F8D50B /* PichiClimaTests */,
 				9405B8331BC080AC00F8D50B /* PichiClimaUITests */,
 				9405B8121BC080AC00F8D50B /* Products */,
+				A43F0AB49895C16715ADC166 /* Pods */,
+				A2A5AE39747669F193D5615D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +121,7 @@
 				9405B81B1BC080AC00F8D50B /* Assets.xcassets */,
 				9405B81D1BC080AC00F8D50B /* LaunchScreen.storyboard */,
 				9405B8201BC080AC00F8D50B /* Info.plist */,
+				9436CB541BC0851A0033D6B2 /* Weather.swift */,
 			);
 			path = PichiClima;
 			sourceTree = "<group>";
@@ -125,6 +144,26 @@
 			path = PichiClimaUITests;
 			sourceTree = "<group>";
 		};
+		A2A5AE39747669F193D5615D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9436CB561BC08AAD0033D6B2 /* MapKit.framework */,
+				9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */,
+				9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */,
+				FD0A1A27EA915B2A1D10CB81 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A43F0AB49895C16715ADC166 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBF3E54D9D4F0619EAC8D5B2 /* Pods.debug.xcconfig */,
+				FF1BC68D2614E54ED3BD3A30 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClima" */;
 			buildPhases = (
+				F11CC12E44546B47F7FB760C /* Check Pods Manifest.lock */,
 				9405B80D1BC080AC00F8D50B /* Sources */,
 				9405B80E1BC080AC00F8D50B /* Frameworks */,
 				9405B80F1BC080AC00F8D50B /* Resources */,
+				5358D8E446AED6A160B8E5DC /* Embed Pods Frameworks */,
+				EBAFA518A8F6160A81CA1F43 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +234,11 @@
 				TargetAttributes = {
 					9405B8101BC080AC00F8D50B = {
 						CreatedOnToolsVersion = 7.0.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					9405B8241BC080AC00F8D50B = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -250,12 +297,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5358D8E446AED6A160B8E5DC /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBAFA518A8F6160A81CA1F43 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F11CC12E44546B47F7FB760C /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9405B80D1BC080AC00F8D50B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9405B8171BC080AC00F8D50B /* ViewController.swift in Sources */,
+				9436CB551BC0851A0033D6B2 /* Weather.swift in Sources */,
 				9405B8151BC080AC00F8D50B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,23 +490,35 @@
 		};
 		9405B83A1BC080AC00F8D50B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF3E54D9D4F0619EAC8D5B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = PichiClima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		9405B83B1BC080AC00F8D50B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF1BC68D2614E54ED3BD3A30 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = PichiClima/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClima;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -481,6 +589,7 @@
 				9405B83B1BC080AC00F8D50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +598,7 @@
 				9405B83E1BC080AC00F8D50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaUITests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +607,7 @@
 				9405B8411BC080AC00F8D50B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

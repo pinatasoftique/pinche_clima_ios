@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +15,26 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_night" translatesAutoresizingMaskIntoConstraints="NO" id="B63-ak-bkT">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_opacidad" translatesAutoresizingMaskIntoConstraints="NO" id="69H-xX-nfQ">
+                                <rect key="frame" x="180" y="240" width="240" height="120"/>
+                                <animations/>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="69H-xX-nfQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0TB-Lo-Pb3"/>
+                            <constraint firstItem="B63-ak-bkT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7Qw-qQ-DY2"/>
+                            <constraint firstAttribute="trailing" secondItem="B63-ak-bkT" secondAttribute="trailing" id="Agc-18-Y2j"/>
+                            <constraint firstItem="69H-xX-nfQ" firstAttribute="centerX" secondItem="B63-ak-bkT" secondAttribute="centerX" id="abX-07-5XR"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="B63-ak-bkT" secondAttribute="bottom" id="dWI-hd-rbl"/>
+                            <constraint firstItem="B63-ak-bkT" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="seP-8r-WsW"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +42,8 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back_night" width="320" height="568"/>
+        <image name="logo_opacidad" width="240" height="120"/>
+    </resources>
 </document>
