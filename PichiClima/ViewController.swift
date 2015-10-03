@@ -69,6 +69,7 @@ class ViewController: UIViewController {
     }
     let weather = Weather(humidity: humidity, icon: icon, description: condition, messages: messages)
     _weather = weather
+    toast("Frase: \(messages.last), cel: \(celcius)")
   }
 }
 
