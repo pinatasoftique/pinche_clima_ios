@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9405B8151BC080AC00F8D50B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8141BC080AC00F8D50B /* AppDelegate.swift */; };
+		9405B8171BC080AC00F8D50B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8161BC080AC00F8D50B /* ViewController.swift */; };
+		9405B81A1BC080AC00F8D50B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9405B8181BC080AC00F8D50B /* Main.storyboard */; };
+		9405B81C1BC080AC00F8D50B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9405B81B1BC080AC00F8D50B /* Assets.xcassets */; };
+		9405B81F1BC080AC00F8D50B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9405B81D1BC080AC00F8D50B /* LaunchScreen.storyboard */; };
+		9405B82A1BC080AC00F8D50B /* PichiClimaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8291BC080AC00F8D50B /* PichiClimaTests.swift */; };
+		9405B8351BC080AC00F8D50B /* PichiClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9405B8261BC080AC00F8D50B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9405B8091BC080AC00F8D50B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9405B8101BC080AC00F8D50B;
+			remoteInfo = PichiClima;
+		};
+		9405B8311BC080AC00F8D50B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9405B8091BC080AC00F8D50B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9405B8101BC080AC00F8D50B;
+			remoteInfo = PichiClima;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9405B8111BC080AC00F8D50B /* PichiClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PichiClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405B8141BC080AC00F8D50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9405B8161BC080AC00F8D50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9405B8191BC080AC00F8D50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9405B81B1BC080AC00F8D50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9405B81E1BC080AC00F8D50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9405B8201BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9405B8251BC080AC00F8D50B /* PichiClimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichiClimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405B8291BC080AC00F8D50B /* PichiClimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PichiClimaTests.swift; sourceTree = "<group>"; };
+		9405B82B1BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichiClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PichiClimaUITests.swift; sourceTree = "<group>"; };
+		9405B8361BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9405B80E1BC080AC00F8D50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405B8221BC080AC00F8D50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405B82D1BC080AC00F8D50B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9405B8081BC080AC00F8D50B = {
+			isa = PBXGroup;
+			children = (
+				9405B8131BC080AC00F8D50B /* PichiClima */,
+				9405B8281BC080AC00F8D50B /* PichiClimaTests */,
+				9405B8331BC080AC00F8D50B /* PichiClimaUITests */,
+				9405B8121BC080AC00F8D50B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9405B8121BC080AC00F8D50B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9405B8111BC080AC00F8D50B /* PichiClima.app */,
+				9405B8251BC080AC00F8D50B /* PichiClimaTests.xctest */,
+				9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9405B8131BC080AC00F8D50B /* PichiClima */ = {
+			isa = PBXGroup;
+			children = (
+				9405B8141BC080AC00F8D50B /* AppDelegate.swift */,
+				9405B8161BC080AC00F8D50B /* ViewController.swift */,
+				9405B8181BC080AC00F8D50B /* Main.storyboard */,
+				9405B81B1BC080AC00F8D50B /* Assets.xcassets */,
+				9405B81D1BC080AC00F8D50B /* LaunchScreen.storyboard */,
+				9405B8201BC080AC00F8D50B /* Info.plist */,
+			);
+			path = PichiClima;
+			sourceTree = "<group>";
+		};
+		9405B8281BC080AC00F8D50B /* PichiClimaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9405B8291BC080AC00F8D50B /* PichiClimaTests.swift */,
+				9405B82B1BC080AC00F8D50B /* Info.plist */,
+			);
+			path = PichiClimaTests;
+			sourceTree = "<group>";
+		};
+		9405B8331BC080AC00F8D50B /* PichiClimaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */,
+				9405B8361BC080AC00F8D50B /* Info.plist */,
+			);
+			path = PichiClimaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9405B8101BC080AC00F8D50B /* PichiClima */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClima" */;
+			buildPhases = (
+				9405B80D1BC080AC00F8D50B /* Sources */,
+				9405B80E1BC080AC00F8D50B /* Frameworks */,
+				9405B80F1BC080AC00F8D50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PichiClima;
+			productName = PichiClima;
+			productReference = 9405B8111BC080AC00F8D50B /* PichiClima.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9405B8241BC080AC00F8D50B /* PichiClimaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaTests" */;
+			buildPhases = (
+				9405B8211BC080AC00F8D50B /* Sources */,
+				9405B8221BC080AC00F8D50B /* Frameworks */,
+				9405B8231BC080AC00F8D50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9405B8271BC080AC00F8D50B /* PBXTargetDependency */,
+			);
+			name = PichiClimaTests;
+			productName = PichiClimaTests;
+			productReference = 9405B8251BC080AC00F8D50B /* PichiClimaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9405B82F1BC080AC00F8D50B /* PichiClimaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaUITests" */;
+			buildPhases = (
+				9405B82C1BC080AC00F8D50B /* Sources */,
+				9405B82D1BC080AC00F8D50B /* Frameworks */,
+				9405B82E1BC080AC00F8D50B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9405B8321BC080AC00F8D50B /* PBXTargetDependency */,
+			);
+			name = PichiClimaUITests;
+			productName = PichiClimaUITests;
+			productReference = 9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9405B8091BC080AC00F8D50B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Ernesto Cambuston";
+				TargetAttributes = {
+					9405B8101BC080AC00F8D50B = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					9405B8241BC080AC00F8D50B = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9405B8101BC080AC00F8D50B;
+					};
+					9405B82F1BC080AC00F8D50B = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 9405B8101BC080AC00F8D50B;
+					};
+				};
+			};
+			buildConfigurationList = 9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PichiClima" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9405B8081BC080AC00F8D50B;
+			productRefGroup = 9405B8121BC080AC00F8D50B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9405B8101BC080AC00F8D50B /* PichiClima */,
+				9405B8241BC080AC00F8D50B /* PichiClimaTests */,
+				9405B82F1BC080AC00F8D50B /* PichiClimaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9405B80F1BC080AC00F8D50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9405B81F1BC080AC00F8D50B /* LaunchScreen.storyboard in Resources */,
+				9405B81C1BC080AC00F8D50B /* Assets.xcassets in Resources */,
+				9405B81A1BC080AC00F8D50B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405B8231BC080AC00F8D50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405B82E1BC080AC00F8D50B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9405B80D1BC080AC00F8D50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9405B8171BC080AC00F8D50B /* ViewController.swift in Sources */,
+				9405B8151BC080AC00F8D50B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405B8211BC080AC00F8D50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9405B82A1BC080AC00F8D50B /* PichiClimaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9405B82C1BC080AC00F8D50B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9405B8351BC080AC00F8D50B /* PichiClimaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9405B8271BC080AC00F8D50B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9405B8101BC080AC00F8D50B /* PichiClima */;
+			targetProxy = 9405B8261BC080AC00F8D50B /* PBXContainerItemProxy */;
+		};
+		9405B8321BC080AC00F8D50B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9405B8101BC080AC00F8D50B /* PichiClima */;
+			targetProxy = 9405B8311BC080AC00F8D50B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9405B8181BC080AC00F8D50B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9405B8191BC080AC00F8D50B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9405B81D1BC080AC00F8D50B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9405B81E1BC080AC00F8D50B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9405B8371BC080AC00F8D50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9405B8381BC080AC00F8D50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9405B83A1BC080AC00F8D50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PichiClima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9405B83B1BC080AC00F8D50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PichiClima/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClima;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9405B83D1BC080AC00F8D50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PichiClimaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PichiClima.app/PichiClima";
+			};
+			name = Debug;
+		};
+		9405B83E1BC080AC00F8D50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PichiClimaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PichiClima.app/PichiClima";
+			};
+			name = Release;
+		};
+		9405B8401BC080AC00F8D50B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PichiClimaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PichiClima;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		9405B8411BC080AC00F8D50B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PichiClimaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PichiClima;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PichiClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405B8371BC080AC00F8D50B /* Debug */,
+				9405B8381BC080AC00F8D50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClima" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405B83A1BC080AC00F8D50B /* Debug */,
+				9405B83B1BC080AC00F8D50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405B83D1BC080AC00F8D50B /* Debug */,
+				9405B83E1BC080AC00F8D50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9405B8401BC080AC00F8D50B /* Debug */,
+				9405B8411BC080AC00F8D50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9405B8091BC080AC00F8D50B /* Project object */;
+}
