@@ -7,11 +7,15 @@
 //
 
 import UIKit
-import Alamofire
+import RealmSwift
 import CoreLocation
-import SwiftyJSON
 
 class ViewController: UIViewController {
+  
+  @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var conditionLabel: UILabel!
+  @IBOutlet weak var messageLabel: UILabel!
+  
   var _weather:Weather?
   var lastLocation:CLLocation?
   var locationManager = CLLocationManager()
@@ -19,12 +23,12 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     locationManager.delegate = self
     switch CLLocationManager.authorizationStatus() {
-    case .AuthorizedWhenInUse:
-      locationManager.startUpdatingLocation()
+    case .NotDetermined:
+      requestGpsPermissions()
     case .Restricted, .Denied:
       noGps()
     default:
-      requestGpsPermissions()
+      locationManager.startUpdatingLocation()
     }
   }
 
@@ -48,36 +52,24 @@ class ViewController: UIViewController {
   }
   
   private func requestData(coordinate:CLLocationCoordinate2D) {
-    Alamofire.request(.GET, "https://weatherapi.herokuapp.com/weather/\(coordinate.latitude)/\(coordinate.longitude)").responseJSON(completionHandler: { [weak self] _, response, object in
-      if let object = object.value {
-        self?.handleResponse(object)
-      } else {
-        self?.networkError()
-      }
+    Weather.current(coordinate, completion: { [weak self] weather in
+      self?.handleResponse(weather)
+    }, error: { [weak self] error in
+      self?.toast("Network or server error.")
     })
   }
-  func handleResponse(object:AnyObject) {
-    let json = JSON(object)["current"]
-    let farenheit = json["temperature"]["farenheit"].doubleValue
-    let celcius = json["temperature"]["celcius"].doubleValue
-    let icon = json["icon"].stringValue
-    let humidity = json["humidity"].doubleValue
-    let condition = json["condition"].stringValue
-    var messages = [String]()
-    for (_, subJson) in json["messages"]["neutral"] {
-      messages.append(subJson.stringValue)
-    }
-    let weather = Weather(humidity: humidity, icon: icon, description: condition, messages: messages)
-    _weather = weather
-    toast("Frase: \(messages.last), cel: \(celcius)")
+  func handleResponse(weather:Weather) {
+    messageLabel.text = weather.messages
+    conditionLabel.text = weather.condition
   }
 }
 
 extension ViewController:CLLocationManagerDelegate {
   func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+    manager.stopUpdatingLocation()
     if let location = locations.last {
       if let lastLocation = lastLocation {
-        if location.distanceFromLocation(lastLocation) >= 100 {
+        if location.distanceFromLocation(lastLocation) >= 10000 {
           requestData(location.coordinate)
         } else {
           print("Locations to similar to last one..")
@@ -91,17 +83,10 @@ extension ViewController:CLLocationManagerDelegate {
   func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
     if status == .AuthorizedWhenInUse {
       manager.startUpdatingLocation()
-    } else {
+    } else if status != .NotDetermined {
       toast("You won't be able to see location.. Go to settings and change location preferences.")
     }
   }
 }
 
-extension UIViewController {
-  func toast(message:String) {
-    let alertController = UIAlertController(title: "Hey..", message: message, preferredStyle: .Alert)
-    let alertAction = UIAlertAction(title: "Dismiss", style: .Default, handler: nil)
-    alertController.addAction(alertAction)
-    presentViewController(alertController, animated: true, completion: nil)
-  }
-}
+

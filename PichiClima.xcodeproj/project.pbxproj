@@ -18,6 +18,10 @@
 		9436CB521BC083CC0033D6B2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */; };
 		9436CB551BC0851A0033D6B2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436CB541BC0851A0033D6B2 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
 		9436CB571BC08AAD0033D6B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB561BC08AAD0033D6B2 /* MapKit.framework */; };
+		949A30D61BC098B700D5732A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949A30D51BC098B700D5732A /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		94C06C601BC09A2D005A7FAD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C06C5F1BC09A2D005A7FAD /* RealmSwift.framework */; };
+		94C06C631BC0A0C6005A7FAD /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */; settings = {ASSET_TAGS = (); }; };
+		94C06C651BC0A31A005A7FAD /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */; settings = {ASSET_TAGS = (); }; };
 		ED773779B7ECBEBD49281991 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0A1A27EA915B2A1D10CB81 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -56,6 +60,10 @@
 		9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		9436CB541BC0851A0033D6B2 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		9436CB561BC08AAD0033D6B2 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		949A30D51BC098B700D5732A /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = models/User.swift; sourceTree = "<group>"; };
+		94C06C5F1BC09A2D005A7FAD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
+		94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+extensions.swift"; path = "utils/Array+extensions.swift"; sourceTree = "<group>"; };
+		94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extensions.swift"; path = "utils/UIViewController+extensions.swift"; sourceTree = "<group>"; };
 		DBF3E54D9D4F0619EAC8D5B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FD0A1A27EA915B2A1D10CB81 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF1BC68D2614E54ED3BD3A30 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -66,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94C06C601BC09A2D005A7FAD /* RealmSwift.framework in Frameworks */,
 				9436CB511BC083CC0033D6B2 /* Alamofire.framework in Frameworks */,
 				9436CB521BC083CC0033D6B2 /* SwiftyJSON.framework in Frameworks */,
 				9436CB571BC08AAD0033D6B2 /* MapKit.framework in Frameworks */,
@@ -115,13 +124,14 @@
 		9405B8131BC080AC00F8D50B /* PichiClima */ = {
 			isa = PBXGroup;
 			children = (
+				94C06C661BC0A34D005A7FAD /* controllers */,
+				949A30D41BC098A700D5732A /* models */,
+				94C06C611BC0A0B3005A7FAD /* utils */,
 				9405B8141BC080AC00F8D50B /* AppDelegate.swift */,
-				9405B8161BC080AC00F8D50B /* ViewController.swift */,
 				9405B8181BC080AC00F8D50B /* Main.storyboard */,
 				9405B81B1BC080AC00F8D50B /* Assets.xcassets */,
 				9405B81D1BC080AC00F8D50B /* LaunchScreen.storyboard */,
 				9405B8201BC080AC00F8D50B /* Info.plist */,
-				9436CB541BC0851A0033D6B2 /* Weather.swift */,
 			);
 			path = PichiClima;
 			sourceTree = "<group>";
@@ -144,9 +154,36 @@
 			path = PichiClimaUITests;
 			sourceTree = "<group>";
 		};
+		949A30D41BC098A700D5732A /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9436CB541BC0851A0033D6B2 /* Weather.swift */,
+				949A30D51BC098B700D5732A /* User.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		94C06C611BC0A0B3005A7FAD /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */,
+				94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		94C06C661BC0A34D005A7FAD /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9405B8161BC080AC00F8D50B /* ViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
 		A2A5AE39747669F193D5615D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				94C06C5F1BC09A2D005A7FAD /* RealmSwift.framework */,
 				9436CB561BC08AAD0033D6B2 /* MapKit.framework */,
 				9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */,
 				9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */,
@@ -350,8 +387,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				949A30D61BC098B700D5732A /* User.swift in Sources */,
+				94C06C631BC0A0C6005A7FAD /* Array+extensions.swift in Sources */,
 				9405B8171BC080AC00F8D50B /* ViewController.swift in Sources */,
 				9436CB551BC0851A0033D6B2 /* Weather.swift in Sources */,
+				94C06C651BC0A31A005A7FAD /* UIViewController+extensions.swift in Sources */,
 				9405B8151BC080AC00F8D50B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
