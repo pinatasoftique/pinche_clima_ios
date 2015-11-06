@@ -20,7 +20,7 @@ class User:Object {
         return user
       } else {
         let user = User()
-        realm.write {
+        try! realm.write {
             realm.create(User.self, value: user, update: false)
         }
         return user

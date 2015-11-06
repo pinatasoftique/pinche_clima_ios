@@ -16,13 +16,13 @@
 		9405B8351BC080AC00F8D50B /* PichiClimaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */; };
 		9436CB511BC083CC0033D6B2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */; };
 		9436CB521BC083CC0033D6B2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */; };
-		9436CB551BC0851A0033D6B2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436CB541BC0851A0033D6B2 /* Weather.swift */; settings = {ASSET_TAGS = (); }; };
+		9436CB551BC0851A0033D6B2 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436CB541BC0851A0033D6B2 /* Weather.swift */; };
 		9436CB571BC08AAD0033D6B2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9436CB561BC08AAD0033D6B2 /* MapKit.framework */; };
-		949A30D61BC098B700D5732A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949A30D51BC098B700D5732A /* User.swift */; settings = {ASSET_TAGS = (); }; };
+		949A30D61BC098B700D5732A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949A30D51BC098B700D5732A /* User.swift */; };
 		94C06C601BC09A2D005A7FAD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C06C5F1BC09A2D005A7FAD /* RealmSwift.framework */; };
-		94C06C631BC0A0C6005A7FAD /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */; settings = {ASSET_TAGS = (); }; };
-		94C06C651BC0A31A005A7FAD /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */; settings = {ASSET_TAGS = (); }; };
-		ED773779B7ECBEBD49281991 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0A1A27EA915B2A1D10CB81 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		94C06C631BC0A0C6005A7FAD /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */; };
+		94C06C651BC0A31A005A7FAD /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */; };
+		ED773779B7ECBEBD49281991 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0A1A27EA915B2A1D10CB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */

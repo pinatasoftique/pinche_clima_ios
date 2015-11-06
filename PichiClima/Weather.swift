@@ -22,7 +22,7 @@ class Weather:Object {
   dynamic var date = NSDate()
   class func fromJson(object:AnyObject)->Weather {
     let weather = Weather()
-    let json = JSON(object)["current"]
+    let json = JSON(data: object as! NSData)["current"]
     if let farenheit = json["temperature"]["farenheit"].double {
       weather.farenheit = farenheit
     }
@@ -47,19 +47,19 @@ class Weather:Object {
     weather.messages = messages.random
     return weather
   }
-  class func current(coordinate:CLLocationCoordinate2D ,completion:(weather:Weather)->(), error:(error:ErrorType)->())->Alamofire.Request {
-    return Alamofire.request(.GET, "https://weatherapi.herokuapp.com/weather/\(coordinate.latitude)/\(coordinate.longitude)").responseJSON(completionHandler: { _, response, object in
-      if let object = object.value {
+  class func current(coordinate:CLLocationCoordinate2D , completion:(weather:Weather)->(), error:(error:ErrorType)->())->Alamofire.Request {
+    return Alamofire.request(.GET, "https://weatherapi.herokuapp.com/weather/\(coordinate.latitude)/\(coordinate.longitude)").responseJSON{ response in
+      if let object = response.data {
         let realm = try! Realm()
         let user = User.current
         let weather = Weather.fromJson(object)
-        realm.write {
-          user.weathers.append(weather)
+        try! realm.write {
+            user.weathers.append(weather)
         }
         completion(weather: weather)
       } else {
         error(error: NSError(domain: "unknown error", code: 100, userInfo: nil))
       }
-      })
+      }
   }
 }
