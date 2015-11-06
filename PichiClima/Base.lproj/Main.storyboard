@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="CCZ-Aq-cUf">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -38,9 +39,12 @@
                                 <rect key="frame" x="0.0" y="-25" width="600" height="561"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clb-bg-aNp">
-                                <rect key="frame" x="279" y="101" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clb-bg-aNp">
+                                <rect key="frame" x="20" y="0.0" width="560" height="120"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="pd8-ge-Si6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -49,9 +53,12 @@
                                 <rect key="frame" x="180" y="153" width="240" height="128"/>
                                 <animations/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sm-nN-egE">
-                                <rect key="frame" x="279" y="407" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sm-nN-egE">
+                                <rect key="frame" x="20" y="386" width="560" height="150"/>
                                 <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="L1D-8T-ERk"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -62,11 +69,17 @@
                         <constraints>
                             <constraint firstItem="lsl-A0-TVr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="39H-hN-PMv"/>
                             <constraint firstItem="lsl-A0-TVr" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-25" id="J3c-Fg-7kc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="clb-bg-aNp" secondAttribute="trailing" id="Na5-U5-NN6"/>
+                            <constraint firstItem="clb-bg-aNp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Pb4-kI-OpZ"/>
                             <constraint firstItem="clb-bg-aNp" firstAttribute="centerX" secondItem="lsl-A0-TVr" secondAttribute="centerX" id="RcM-DV-KrR"/>
                             <constraint firstAttribute="trailing" secondItem="lsl-A0-TVr" secondAttribute="trailing" id="V9P-bI-ndw"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="8Sm-nN-egE" secondAttribute="bottom" id="dZm-BG-y5l"/>
+                            <constraint firstItem="clb-bg-aNp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="gaA-UW-4eX"/>
                             <constraint firstItem="8Sm-nN-egE" firstAttribute="centerX" secondItem="clb-bg-aNp" secondAttribute="centerX" id="hNv-1s-iXl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lsl-A0-TVr" secondAttribute="bottom" id="hmf-MM-Ihl"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8Sm-nN-egE" secondAttribute="trailing" id="joR-my-oDG"/>
                             <constraint firstItem="8Sm-nN-egE" firstAttribute="centerX" secondItem="lsl-A0-TVr" secondAttribute="centerX" id="qbU-ah-znL"/>
+                            <constraint firstItem="8Sm-nN-egE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="rSH-Wy-pEW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6ad-bh-eqE"/>
@@ -78,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="145" y="-330"/>
+            <point key="canvasLocation" x="143" y="-336"/>
         </scene>
     </scenes>
     <resources>
