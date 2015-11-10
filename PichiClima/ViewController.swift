@@ -9,6 +9,7 @@
 import UIKit
 import RealmSwift
 import CoreLocation
+import Social
 
 class ViewController: UIViewController {
   
@@ -17,7 +18,9 @@ class ViewController: UIViewController {
   @IBOutlet weak var conditionLabel: UILabel!
   @IBOutlet weak var messageLabel: UILabel!
   @IBOutlet weak var temperatureLabel: UILabel!
-
+  @IBOutlet weak var facebookImage: UIImageView!
+  @IBOutlet weak var twitterImage: UIImageView!
+  
   var _weather:Weather?
   var lastLocation:CLLocation?
   var locationManager = CLLocationManager()
@@ -26,6 +29,8 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     self.navigationController?.setNavigationBarHidden(true, animated: true)
     self.navigationController?.navigationBar.barStyle = .BlackTranslucent;
+    addTapToFacebookImage()
+    addTapToTwitterImage()
     locationManager.delegate = self
     switch CLLocationManager.authorizationStatus() {
     case .NotDetermined:
@@ -85,6 +90,48 @@ class ViewController: UIViewController {
     imageView.image = UIImage(named: weather.icon)
     backgroundImageView.image = UIImage(named: weather.background)
     temperatureLabel.text = "\(weather.celsius)° C"
+  }
+  
+  func snapshot() -> UIImage {
+    let view = self.view!
+    UIGraphicsBeginImageContext(view.frame.size)
+    view.drawViewHierarchyInRect(view.frame, afterScreenUpdates: true)
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
+    return image
+  }
+  
+  func shareSnapshot(serviceType: String){
+    let sheet = SLComposeViewController(forServiceType: serviceType)
+    sheet.setInitialText("")
+    sheet.addImage(snapshot())
+    presentViewController(sheet, animated: true, completion: nil)
+  }
+  
+  func shareSnapshotFacebook(){
+    shareSnapshot(SLServiceTypeFacebook)
+  }
+  
+  func shareSnapshotTwitter(){
+    shareSnapshot(SLServiceTypeTwitter)
+  }
+  
+  func addTapToFacebookImage(){
+    let gr = UITapGestureRecognizer()
+    gr.numberOfTapsRequired = 1
+    gr.numberOfTouchesRequired = 1
+    gr.addTarget(self, action: "shareSnapshotFacebook")
+    facebookImage.userInteractionEnabled = true
+    facebookImage.addGestureRecognizer(gr)
+  }
+  
+  func addTapToTwitterImage(){
+    let gr = UITapGestureRecognizer()
+    gr.numberOfTapsRequired = 1
+    gr.numberOfTouchesRequired = 1
+    gr.addTarget(self, action: "shareSnapshotTwitter")
+    twitterImage.userInteractionEnabled = true
+    twitterImage.addGestureRecognizer(gr)
   }
 }
 

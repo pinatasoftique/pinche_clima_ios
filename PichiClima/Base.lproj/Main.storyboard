@@ -135,9 +135,11 @@
                     <connections>
                         <outlet property="backgroundImageView" destination="lsl-A0-TVr" id="U3X-aJ-zuk"/>
                         <outlet property="conditionLabel" destination="va0-Uv-j8d" id="EwH-hk-Yfx"/>
+                        <outlet property="facebookImage" destination="M9s-hK-LOm" id="cNd-gG-CnM"/>
                         <outlet property="imageView" destination="bpH-YP-TSb" id="RLx-LA-JsS"/>
                         <outlet property="messageLabel" destination="bhc-yg-HOy" id="fKl-1Y-QfT"/>
                         <outlet property="temperatureLabel" destination="prh-Li-8Q1" id="9Ac-HV-b6W"/>
+                        <outlet property="twitterImage" destination="4LG-sK-F1l" id="ROK-I9-e6H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
