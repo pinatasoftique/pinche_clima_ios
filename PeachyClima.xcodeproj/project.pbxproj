@@ -43,17 +43,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9405B8111BC080AC00F8D50B /* PichiClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PichiClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405B8111BC080AC00F8D50B /* PeachyClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeachyClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9405B8141BC080AC00F8D50B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9405B8161BC080AC00F8D50B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9405B8191BC080AC00F8D50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9405B81B1BC080AC00F8D50B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9405B81E1BC080AC00F8D50B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9405B8201BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9405B8251BC080AC00F8D50B /* PichiClimaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichiClimaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405B8251BC080AC00F8D50B /* PeachyClima.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeachyClima.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9405B8291BC080AC00F8D50B /* PichiClimaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PichiClimaTests.swift; sourceTree = "<group>"; };
 		9405B82B1BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PichiClimaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9405B8301BC080AC00F8D50B /* PeachyClima.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeachyClima.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9405B8341BC080AC00F8D50B /* PichiClimaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PichiClimaUITests.swift; sourceTree = "<group>"; };
 		9405B8361BC080AC00F8D50B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
@@ -114,9 +114,9 @@
 		9405B8121BC080AC00F8D50B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9405B8111BC080AC00F8D50B /* PichiClima.app */,
-				9405B8251BC080AC00F8D50B /* PichiClimaTests.xctest */,
-				9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */,
+				9405B8111BC080AC00F8D50B /* PeachyClima.app */,
+				9405B8251BC080AC00F8D50B /* PeachyClima.xctest */,
+				9405B8301BC080AC00F8D50B /* PeachyClima.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9405B8101BC080AC00F8D50B /* PichiClima */ = {
+		9405B8101BC080AC00F8D50B /* PeachyClima */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClima" */;
+			buildConfigurationList = 9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PeachyClima" */;
 			buildPhases = (
 				F11CC12E44546B47F7FB760C /* Check Pods Manifest.lock */,
 				9405B80D1BC080AC00F8D50B /* Sources */,
@@ -219,14 +219,14 @@
 			);
 			dependencies = (
 			);
-			name = PichiClima;
+			name = PeachyClima;
 			productName = PichiClima;
-			productReference = 9405B8111BC080AC00F8D50B /* PichiClima.app */;
+			productReference = 9405B8111BC080AC00F8D50B /* PeachyClima.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9405B8241BC080AC00F8D50B /* PichiClimaTests */ = {
+		9405B8241BC080AC00F8D50B /* PeachyClimaTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaTests" */;
+			buildConfigurationList = 9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PeachyClimaTests" */;
 			buildPhases = (
 				9405B8211BC080AC00F8D50B /* Sources */,
 				9405B8221BC080AC00F8D50B /* Frameworks */,
@@ -237,14 +237,14 @@
 			dependencies = (
 				9405B8271BC080AC00F8D50B /* PBXTargetDependency */,
 			);
-			name = PichiClimaTests;
+			name = PeachyClimaTests;
 			productName = PichiClimaTests;
-			productReference = 9405B8251BC080AC00F8D50B /* PichiClimaTests.xctest */;
+			productReference = 9405B8251BC080AC00F8D50B /* PeachyClima.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		9405B82F1BC080AC00F8D50B /* PichiClimaUITests */ = {
+		9405B82F1BC080AC00F8D50B /* PeachyClimaUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaUITests" */;
+			buildConfigurationList = 9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PeachyClimaUITests" */;
 			buildPhases = (
 				9405B82C1BC080AC00F8D50B /* Sources */,
 				9405B82D1BC080AC00F8D50B /* Frameworks */,
@@ -255,9 +255,9 @@
 			dependencies = (
 				9405B8321BC080AC00F8D50B /* PBXTargetDependency */,
 			);
-			name = PichiClimaUITests;
+			name = PeachyClimaUITests;
 			productName = PichiClimaUITests;
-			productReference = 9405B8301BC080AC00F8D50B /* PichiClimaUITests.xctest */;
+			productReference = 9405B8301BC080AC00F8D50B /* PeachyClima.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -271,6 +271,7 @@
 				TargetAttributes = {
 					9405B8101BC080AC00F8D50B = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = S4B46Y8N4E;
 						SystemCapabilities = {
 							com.apple.Maps.iOS = {
 								enabled = 1;
@@ -287,7 +288,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PichiClima" */;
+			buildConfigurationList = 9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PeachyClima" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -300,9 +301,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9405B8101BC080AC00F8D50B /* PichiClima */,
-				9405B8241BC080AC00F8D50B /* PichiClimaTests */,
-				9405B82F1BC080AC00F8D50B /* PichiClimaUITests */,
+				9405B8101BC080AC00F8D50B /* PeachyClima */,
+				9405B8241BC080AC00F8D50B /* PeachyClimaTests */,
+				9405B82F1BC080AC00F8D50B /* PeachyClimaUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -417,12 +418,12 @@
 /* Begin PBXTargetDependency section */
 		9405B8271BC080AC00F8D50B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9405B8101BC080AC00F8D50B /* PichiClima */;
+			target = 9405B8101BC080AC00F8D50B /* PeachyClima */;
 			targetProxy = 9405B8261BC080AC00F8D50B /* PBXContainerItemProxy */;
 		};
 		9405B8321BC080AC00F8D50B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9405B8101BC080AC00F8D50B /* PichiClima */;
+			target = 9405B8101BC080AC00F8D50B /* PeachyClima */;
 			targetProxy = 9405B8311BC080AC00F8D50B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -533,15 +534,19 @@
 			baseConfigurationReference = DBF3E54D9D4F0619EAC8D5B2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = PichiClima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClima;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinatasoftique.PeachyClima;
+				PRODUCT_NAME = PeachyClima;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -550,15 +555,19 @@
 			baseConfigurationReference = FF1BC68D2614E54ED3BD3A30 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = PichiClima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClima;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinatasoftique.PeachyClima;
+				PRODUCT_NAME = PeachyClima;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -569,8 +578,8 @@
 				INFOPLIST_FILE = PichiClimaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PichiClima.app/PichiClima";
+				PRODUCT_NAME = PeachyClima;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeachyClima.app/PeachyClima";
 			};
 			name = Debug;
 		};
@@ -581,8 +590,8 @@
 				INFOPLIST_FILE = PichiClimaTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PichiClima.app/PichiClima";
+				PRODUCT_NAME = PeachyClima;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PeachyClima.app/PeachyClima";
 			};
 			name = Release;
 		};
@@ -592,7 +601,7 @@
 				INFOPLIST_FILE = PichiClimaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PeachyClima;
 				TEST_TARGET_NAME = PichiClima;
 				USES_XCTRUNNER = YES;
 			};
@@ -604,7 +613,7 @@
 				INFOPLIST_FILE = PichiClimaUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rocketjourney.PichiClimaUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = PeachyClima;
 				TEST_TARGET_NAME = PichiClima;
 				USES_XCTRUNNER = YES;
 			};
@@ -613,7 +622,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PichiClima" */ = {
+		9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PeachyClima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9405B8371BC080AC00F8D50B /* Debug */,
@@ -622,7 +631,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClima" */ = {
+		9405B8391BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PeachyClima" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9405B83A1BC080AC00F8D50B /* Debug */,
@@ -631,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaTests" */ = {
+		9405B83C1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PeachyClimaTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9405B83D1BC080AC00F8D50B /* Debug */,
@@ -640,7 +649,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PichiClimaUITests" */ = {
+		9405B83F1BC080AC00F8D50B /* Build configuration list for PBXNativeTarget "PeachyClimaUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9405B8401BC080AC00F8D50B /* Debug */,

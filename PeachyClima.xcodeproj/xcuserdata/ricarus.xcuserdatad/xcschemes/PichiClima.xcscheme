@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9405B8101BC080AC00F8D50B"
-               BuildableName = "PichiClima.app"
-               BlueprintName = "PichiClima"
-               ReferencedContainer = "container:PichiClima.xcodeproj">
+               BuildableName = "PeachyClima.app"
+               BlueprintName = "PeachyClima"
+               ReferencedContainer = "container:PeachyClima.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9405B8241BC080AC00F8D50B"
-               BuildableName = "PichiClimaTests.xctest"
-               BlueprintName = "PichiClimaTests"
-               ReferencedContainer = "container:PichiClima.xcodeproj">
+               BuildableName = "PeachyClima.xctest"
+               BlueprintName = "PeachyClimaTests"
+               ReferencedContainer = "container:PeachyClima.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9405B82F1BC080AC00F8D50B"
-               BuildableName = "PichiClimaUITests.xctest"
-               BlueprintName = "PichiClimaUITests"
-               ReferencedContainer = "container:PichiClima.xcodeproj">
+               BuildableName = "PeachyClima.xctest"
+               BlueprintName = "PeachyClimaUITests"
+               ReferencedContainer = "container:PeachyClima.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9405B8101BC080AC00F8D50B"
-            BuildableName = "PichiClima.app"
-            BlueprintName = "PichiClima"
-            ReferencedContainer = "container:PichiClima.xcodeproj">
+            BuildableName = "PeachyClima.app"
+            BlueprintName = "PeachyClima"
+            ReferencedContainer = "container:PeachyClima.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9405B8101BC080AC00F8D50B"
-            BuildableName = "PichiClima.app"
-            BlueprintName = "PichiClima"
-            ReferencedContainer = "container:PichiClima.xcodeproj">
+            BuildableName = "PeachyClima.app"
+            BlueprintName = "PeachyClima"
+            ReferencedContainer = "container:PeachyClima.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -95,9 +95,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9405B8101BC080AC00F8D50B"
-            BuildableName = "PichiClima.app"
-            BlueprintName = "PichiClima"
-            ReferencedContainer = "container:PichiClima.xcodeproj">
+            BuildableName = "PeachyClima.app"
+            BlueprintName = "PeachyClima"
+            ReferencedContainer = "container:PeachyClima.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

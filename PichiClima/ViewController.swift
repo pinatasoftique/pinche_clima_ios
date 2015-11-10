@@ -19,8 +19,11 @@ class ViewController: UIViewController {
   var _weather:Weather?
   var lastLocation:CLLocation?
   var locationManager = CLLocationManager()
+  
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.navigationController?.setNavigationBarHidden(true, animated: true)
+    self.navigationController?.navigationBar.barStyle = .BlackTranslucent;
     locationManager.delegate = self
     switch CLLocationManager.authorizationStatus() {
     case .NotDetermined:
@@ -31,6 +34,21 @@ class ViewController: UIViewController {
       locationManager.startUpdatingLocation()
     }
   }
+    
+  override func viewWillAppear(animated: Bool) {
+    self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    super.viewWillAppear(animated)
+  }
+  
+  override func viewWillDisappear(animated: Bool) {
+    self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    super.viewWillDisappear(animated)
+  }
+  
+  override func preferredStatusBarStyle() -> UIStatusBarStyle {
+    return .LightContent
+  }
+    
 
   func serverError() {
     toast("INTERNAL SERVER ERROR.")
@@ -58,6 +76,7 @@ class ViewController: UIViewController {
       self?.toast("Network or server error.")
     })
   }
+  
   func handleResponse(weather:Weather) {
     messageLabel.text = weather.messages
     conditionLabel.text = weather.condition
