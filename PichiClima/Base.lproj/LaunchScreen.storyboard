@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15B17c" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,24 +16,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="back_night" translatesAutoresizingMaskIntoConstraints="NO" id="B63-ak-bkT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="Default" translatesAutoresizingMaskIntoConstraints="NO" id="B63-ak-bkT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_opacidad" translatesAutoresizingMaskIntoConstraints="NO" id="69H-xX-nfQ">
-                                <rect key="frame" x="180" y="240" width="240" height="120"/>
                                 <animations/>
                             </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="69H-xX-nfQ" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="0TB-Lo-Pb3"/>
-                            <constraint firstItem="B63-ak-bkT" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="7Qw-qQ-DY2"/>
-                            <constraint firstAttribute="trailing" secondItem="B63-ak-bkT" secondAttribute="trailing" id="Agc-18-Y2j"/>
-                            <constraint firstItem="69H-xX-nfQ" firstAttribute="centerX" secondItem="B63-ak-bkT" secondAttribute="centerX" id="abX-07-5XR"/>
-                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="B63-ak-bkT" secondAttribute="bottom" id="dWI-hd-rbl"/>
-                            <constraint firstItem="B63-ak-bkT" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="-20" id="seP-8r-WsW"/>
+                            <constraint firstItem="B63-ak-bkT" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="4Oq-n9-bWI"/>
+                            <constraint firstItem="B63-ak-bkT" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="wGv-Bg-CyY"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -43,7 +35,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="back_night" width="320" height="568"/>
-        <image name="logo_opacidad" width="240" height="120"/>
+        <image name="Default" width="320" height="568"/>
     </resources>
 </document>

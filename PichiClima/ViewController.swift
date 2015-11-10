@@ -13,9 +13,11 @@ import CoreLocation
 class ViewController: UIViewController {
   
   @IBOutlet weak var imageView: UIImageView!
+  @IBOutlet weak var backgroundImageView: UIImageView!
   @IBOutlet weak var conditionLabel: UILabel!
   @IBOutlet weak var messageLabel: UILabel!
-  
+  @IBOutlet weak var temperatureLabel: UILabel!
+
   var _weather:Weather?
   var lastLocation:CLLocation?
   var locationManager = CLLocationManager()
@@ -80,6 +82,9 @@ class ViewController: UIViewController {
   func handleResponse(weather:Weather) {
     messageLabel.text = weather.messages
     conditionLabel.text = weather.condition
+    imageView.image = UIImage(named: weather.icon)
+    backgroundImageView.image = UIImage(named: weather.background)
+    temperatureLabel.text = "\(weather.celcius)° C"
   }
 }
 

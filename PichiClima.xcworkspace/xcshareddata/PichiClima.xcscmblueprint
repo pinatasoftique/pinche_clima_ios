@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "81A095C2ED15C0D33D8E200BF77351512884CE45",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "ABFE2F4BF382A8C22EBE92915940D0EC29F040A1" : 0,
+    "81A095C2ED15C0D33D8E200BF77351512884CE45" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "F89E8A77-587B-42E3-AB7E-A1A827CD4C50",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "ABFE2F4BF382A8C22EBE92915940D0EC29F040A1" : "..\/xamarin\/pincheclima",
+    "81A095C2ED15C0D33D8E200BF77351512884CE45" : "pinche_clima_ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "PichiClima",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "PichiClima.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:pinatasoftware\/pinche_clima_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "81A095C2ED15C0D33D8E200BF77351512884CE45"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "gitlab.com:pinata\/pincheclima.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "ABFE2F4BF382A8C22EBE92915940D0EC29F040A1"
+    }
+  ]
+}

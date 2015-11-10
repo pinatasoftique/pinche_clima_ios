@@ -18,15 +18,17 @@ class Weather:Object {
   dynamic var condition = ""
   dynamic var messages = ""
   dynamic var farenheit = 0.0
-  dynamic var celcius = 0.0
+  dynamic var celcius = 0
   dynamic var date = NSDate()
+  dynamic var background = "back"
+  
   class func fromJson(object:AnyObject)->Weather {
     let weather = Weather()
     let json = JSON(data: object as! NSData)["current"]
     if let farenheit = json["temperature"]["farenheit"].double {
       weather.farenheit = farenheit
     }
-    if let celcius = json["temperature"]["celcius"].double {
+    if let celcius = json["temperature"]["celcius"].int {
       weather.celcius = celcius
     }
     if let icon = json["icon"].string {
@@ -45,8 +47,15 @@ class Weather:Object {
       }
     }
     weather.messages = messages.random
+    if weather.isNight(){
+      weather.background = "back_night"
+      weather.icon = "nt_\(weather.icon)"
+    }else{
+      weather.background = "back"
+    }
     return weather
   }
+  
   class func current(coordinate:CLLocationCoordinate2D , completion:(weather:Weather)->(), error:(error:ErrorType)->())->Alamofire.Request {
     return Alamofire.request(.GET, "https://weatherapi.herokuapp.com/weather/\(coordinate.latitude)/\(coordinate.longitude)").responseJSON{ response in
       if let object = response.data {
@@ -61,5 +70,15 @@ class Weather:Object {
         error(error: NSError(domain: "unknown error", code: 100, userInfo: nil))
       }
       }
+  }
+  
+  func isNight() -> Bool {
+    let calendar = NSCalendar.currentCalendar()
+    let comp = calendar.components([.Hour, .Minute], fromDate: self.date)
+    if(comp.hour > 19 || comp.hour < 5){
+      return true
+    }else{
+      return false
+    }
   }
 }
