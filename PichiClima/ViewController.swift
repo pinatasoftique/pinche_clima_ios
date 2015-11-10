@@ -84,7 +84,7 @@ class ViewController: UIViewController {
     conditionLabel.text = weather.condition
     imageView.image = UIImage(named: weather.icon)
     backgroundImageView.image = UIImage(named: weather.background)
-    temperatureLabel.text = "\(weather.celcius)° C"
+    temperatureLabel.text = "\(weather.celsius)° C"
   }
 }
 

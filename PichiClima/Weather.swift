@@ -18,7 +18,7 @@ class Weather:Object {
   dynamic var condition = ""
   dynamic var messages = ""
   dynamic var farenheit = 0.0
-  dynamic var celcius = 0
+  dynamic var celsius = "0"
   dynamic var date = NSDate()
   dynamic var background = "back"
   
@@ -28,8 +28,8 @@ class Weather:Object {
     if let farenheit = json["temperature"]["farenheit"].double {
       weather.farenheit = farenheit
     }
-    if let celcius = json["temperature"]["celcius"].int {
-      weather.celcius = celcius
+    if let celsius = json["temperature"]["celsius"].string {
+      weather.celsius = celsius
     }
     if let icon = json["icon"].string {
       weather.icon = icon

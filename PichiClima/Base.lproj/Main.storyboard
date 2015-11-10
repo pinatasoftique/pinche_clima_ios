@@ -57,7 +57,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sm-nN-egE">
-                                <rect key="frame" x="20" y="386" width="560" height="150"/>
+                                <rect key="frame" x="20" y="348" width="560" height="150"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="L1D-8T-ERk"/>
@@ -75,7 +75,7 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0° C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwO-Ah-4MR">
-                                <rect key="frame" x="20" y="258" width="560" height="128"/>
+                                <rect key="frame" x="20" y="258" width="560" height="90"/>
                                 <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Emp-Ko-sR7"/>
@@ -89,6 +89,14 @@
                                     </mask>
                                 </variation>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_opacidad" translatesAutoresizingMaskIntoConstraints="NO" id="afF-2E-xdW">
+                                <rect key="frame" x="240" y="476" width="120" height="60"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Qsm-mq-b8R"/>
+                                    <constraint firstAttribute="height" constant="60" id="fgU-TJ-nbH"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="1" green="0.17730064224550779" blue="0.39852730490424426" alpha="1" colorSpace="calibratedRGB"/>
@@ -107,7 +115,10 @@
                             <constraint firstItem="8Sm-nN-egE" firstAttribute="centerX" secondItem="clb-bg-aNp" secondAttribute="centerX" id="hNv-1s-iXl"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="lsl-A0-TVr" secondAttribute="bottom" id="hmf-MM-Ihl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="8Sm-nN-egE" secondAttribute="trailing" id="joR-my-oDG"/>
+                            <constraint firstItem="afF-2E-xdW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kM3-Hj-SMI"/>
                             <constraint firstItem="v4i-mj-EEh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mlU-Q0-J60"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="afF-2E-xdW" secondAttribute="bottom" id="ngf-0k-by8"/>
+                            <constraint firstItem="afF-2E-xdW" firstAttribute="top" secondItem="dwO-Ah-4MR" secondAttribute="bottom" id="oHY-nt-Qbn"/>
                             <constraint firstItem="dwO-Ah-4MR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="oP6-GS-eAb"/>
                             <constraint firstItem="8Sm-nN-egE" firstAttribute="centerX" secondItem="lsl-A0-TVr" secondAttribute="centerX" id="qbU-ah-znL"/>
                             <constraint firstItem="lsl-A0-TVr" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="rIK-fE-IN6"/>
@@ -117,6 +128,8 @@
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="J3c-Fg-7kc"/>
+                                <exclude reference="oHY-nt-Qbn"/>
+                                <exclude reference="dZm-BG-y5l"/>
                             </mask>
                         </variation>
                     </view>
@@ -136,5 +149,6 @@
     </scenes>
     <resources>
         <image name="back" width="320" height="568"/>
+        <image name="logo_opacidad" width="240" height="120"/>
     </resources>
 </document>

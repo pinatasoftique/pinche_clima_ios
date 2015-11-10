@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static Weather.fromJson(AnyObject) -&gt; Weather:Weather.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "json[&quot;temperature&quot;][&quot;celcius&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
