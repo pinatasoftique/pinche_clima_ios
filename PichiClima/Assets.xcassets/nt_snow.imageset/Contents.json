@@ -2,11 +2,11 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "nt_snow.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "nt_snow.png",
       "scale" : "2x"
     },
     {
