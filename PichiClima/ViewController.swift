@@ -18,8 +18,9 @@ class ViewController: UIViewController {
   @IBOutlet weak var conditionLabel: UILabel!
   @IBOutlet weak var messageLabel: UILabel!
   @IBOutlet weak var temperatureLabel: UILabel!
-  @IBOutlet weak var facebookImage: UIImageView!
-  @IBOutlet weak var twitterImage: UIImageView!
+  @IBOutlet weak var facebookButton: UIButton!
+  @IBOutlet weak var twitterButton: UIButton!
+  @IBOutlet weak var peachyButton: UIButton!
   
   var _weather:Weather?
   var lastLocation:CLLocation?
@@ -29,8 +30,10 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     self.navigationController?.setNavigationBarHidden(true, animated: true)
     self.navigationController?.navigationBar.barStyle = .BlackTranslucent;
-    addTapToFacebookImage()
-    addTapToTwitterImage()
+    facebookButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+    twitterButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+    peachyButton.imageView?.contentMode = UIViewContentMode.ScaleAspectFit
+    
     locationManager.delegate = self
     switch CLLocationManager.authorizationStatus() {
     case .NotDetermined:
@@ -116,22 +119,16 @@ class ViewController: UIViewController {
     shareSnapshot(SLServiceTypeTwitter)
   }
   
-  func addTapToFacebookImage(){
-    let gr = UITapGestureRecognizer()
-    gr.numberOfTapsRequired = 1
-    gr.numberOfTouchesRequired = 1
-    gr.addTarget(self, action: "shareSnapshotFacebook")
-    facebookImage.userInteractionEnabled = true
-    facebookImage.addGestureRecognizer(gr)
+  @IBAction func facebookTap(sender: AnyObject) {
+    shareSnapshotFacebook()
   }
   
-  func addTapToTwitterImage(){
-    let gr = UITapGestureRecognizer()
-    gr.numberOfTapsRequired = 1
-    gr.numberOfTouchesRequired = 1
-    gr.addTarget(self, action: "shareSnapshotTwitter")
-    twitterImage.userInteractionEnabled = true
-    twitterImage.addGestureRecognizer(gr)
+  @IBAction func twitterTap(sender: AnyObject) {
+    shareSnapshotTwitter()
+  }
+  
+  @IBAction func peachyTap(sender: AnyObject) {
+    requestData(lastLocation!.coordinate)
   }
 }
 
@@ -140,12 +137,13 @@ extension ViewController:CLLocationManagerDelegate {
     manager.stopUpdatingLocation()
     if let location = locations.last {
       if let lastLocation = lastLocation {
-        if location.distanceFromLocation(lastLocation) >= 10000 {
+        if location.distanceFromLocation(lastLocation) >= 1000 {          
           requestData(location.coordinate)
         } else {
           print("Locations to similar to last one..")
         }
       } else {
+        lastLocation = location
         requestData(location.coordinate)
       }
     }
