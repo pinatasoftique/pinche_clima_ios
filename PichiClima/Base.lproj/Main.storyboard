@@ -53,84 +53,70 @@
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="81"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_opacidad" translatesAutoresizingMaskIntoConstraints="NO" id="6OO-RQ-dnj">
-                                                <rect key="frame" x="0.0" y="10.5" width="600" height="60"/>
+                                                <rect key="frame" x="0.0" y="11" width="600" height="60"/>
                                                 <animations/>
                                             </imageView>
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va0-Uv-j8d">
-                                        <rect key="frame" x="300" y="81" width="0.0" height="80"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="va0-Uv-j8d">
+                                        <rect key="frame" x="0.0" y="81" width="600" height="81"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="GothamCondensed-Medium" family="Gotham Condensed" pointSize="20"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="center" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-Jp-O3o">
-                                        <rect key="frame" x="300" y="161" width="0.0" height="81"/>
+                                    <stackView opaque="NO" contentMode="center" misplaced="YES" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="v0g-Jp-O3o">
+                                        <rect key="frame" x="275" y="161" width="50" height="81"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-YP-TSb">
-                                                <rect key="frame" x="0.0" y="41" width="0.0" height="0.0"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bpH-YP-TSb">
+                                                <rect key="frame" x="0.0" y="16" width="50" height="50"/>
                                                 <animations/>
                                             </imageView>
                                         </subviews>
                                         <animations/>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prh-Li-8Q1">
-                                        <rect key="frame" x="300" y="242" width="0.0" height="80"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="prh-Li-8Q1">
+                                        <rect key="frame" x="0.0" y="242" width="600" height="81"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="GothamCondensed-Medium" family="Gotham Condensed" pointSize="75"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-yg-HOy">
-                                        <rect key="frame" x="300" y="322" width="0.0" height="81"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhc-yg-HOy">
+                                        <rect key="frame" x="0.0" y="322" width="600" height="81"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" name="GothamCondensed-Medium" family="Gotham Condensed" pointSize="40"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="btu-L3-3C8">
-                                        <rect key="frame" x="0.0" y="403" width="600" height="80"/>
+                                        <rect key="frame" x="0.0" y="403" width="600" height="81"/>
                                         <subviews>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwz-qf-ALi">
-                                                <rect key="frame" x="0.0" y="0.0" width="200" height="80.5"/>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvy-6S-tYh">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="81"/>
                                                 <animations/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="RBP-ql-kHn">
-                                                <rect key="frame" x="200" y="0.0" width="200" height="80.5"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hvy-6S-tYh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="47" height="81"/>
-                                                        <animations/>
-                                                        <state key="normal" image="facebook_logoblanco"/>
-                                                        <connections>
-                                                            <action selector="facebookTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QLo-dH-5tS"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV0-i8-nnO">
-                                                        <rect key="frame" x="77" y="0.0" width="47" height="81"/>
-                                                        <animations/>
-                                                        <state key="normal" image="twitter_logoblanco"/>
-                                                        <connections>
-                                                            <action selector="twitterTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwq-P4-2PM"/>
-                                                        </connections>
-                                                    </button>
-                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hla-Q6-4b9">
-                                                        <rect key="frame" x="154" y="0.0" width="46" height="81"/>
-                                                        <animations/>
-                                                        <state key="normal" image="icon_p"/>
-                                                        <connections>
-                                                            <action selector="peachyTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCy-cB-IdG"/>
-                                                        </connections>
-                                                    </button>
-                                                </subviews>
+                                                <state key="normal" image="facebook_logoblanco"/>
+                                                <connections>
+                                                    <action selector="facebookTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QLo-dH-5tS"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qV0-i8-nnO">
+                                                <rect key="frame" x="200" y="0.0" width="200" height="81"/>
                                                 <animations/>
-                                            </stackView>
-                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4B-eo-iz3">
-                                                <rect key="frame" x="400" y="0.0" width="200" height="80.5"/>
+                                                <state key="normal" image="twitter_logoblanco"/>
+                                                <connections>
+                                                    <action selector="twitterTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hwq-P4-2PM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hla-Q6-4b9">
+                                                <rect key="frame" x="400" y="0.0" width="200" height="81"/>
                                                 <animations/>
-                                            </stackView>
+                                                <state key="normal" image="icon_p"/>
+                                                <connections>
+                                                    <action selector="peachyTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HCy-cB-IdG"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <animations/>
                                     </stackView>
