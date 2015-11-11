@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 
-class User:Object {
+public class User:Object {
   dynamic var first_name = ""
   dynamic var last_name = ""
   let weathers = List<Weather>()

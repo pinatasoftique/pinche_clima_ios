@@ -4,10 +4,15 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PeachyToday.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
 		<key>PichiClima.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>5</integer>
+			<integer>0</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -23,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>9405B82F1BC080AC00F8D50B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A52BD0A21BF2C6F200FABDFA</key>
 		<dict>
 			<key>primary</key>
 			<true/>

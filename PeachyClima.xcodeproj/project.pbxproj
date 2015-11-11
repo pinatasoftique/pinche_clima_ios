@@ -21,7 +21,16 @@
 		94C06C601BC09A2D005A7FAD /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94C06C5F1BC09A2D005A7FAD /* RealmSwift.framework */; };
 		94C06C631BC0A0C6005A7FAD /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */; };
 		94C06C651BC0A31A005A7FAD /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */; };
+		A52852871BF2CD6B00E9E969 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 949A30D51BC098B700D5732A /* User.swift */; };
+		A52BD0A51BF2C6F200FABDFA /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A52BD0A41BF2C6F200FABDFA /* NotificationCenter.framework */; };
+		A52BD0A81BF2C6F200FABDFA /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52BD0A71BF2C6F200FABDFA /* TodayViewController.swift */; };
+		A52BD0AB1BF2C6F200FABDFA /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52BD0A91BF2C6F200FABDFA /* MainInterface.storyboard */; };
+		A52BD0AF1BF2C6F200FABDFA /* PeachyToday.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A52BD0A31BF2C6F200FABDFA /* PeachyToday.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A52BD0B41BF2C90C00FABDFA /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9436CB541BC0851A0033D6B2 /* Weather.swift */; };
+		A52BD0B51BF2C9D500FABDFA /* Array+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */; };
+		A52BD0B61BF2C9D900FABDFA /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */; };
 		A550618F1BF17BBC00609752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A550618E1BF17BBC00609752 /* Assets.xcassets */; };
+		A59A3CBC1BF2D52D00A45CBC /* GothamCond-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5B01A401BF1CD0B00B3CCBA /* GothamCond-Medium.otf */; };
 		A5B01A411BF1CD4800B3CCBA /* GothamCond-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5B01A401BF1CD0B00B3CCBA /* GothamCond-Medium.otf */; };
 		ED773779B7ECBEBD49281991 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0A1A27EA915B2A1D10CB81 /* Pods.framework */; };
 /* End PBXBuildFile section */
@@ -41,7 +50,28 @@
 			remoteGlobalIDString = 9405B8101BC080AC00F8D50B;
 			remoteInfo = PichiClima;
 		};
+		A52BD0AD1BF2C6F200FABDFA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9405B8091BC080AC00F8D50B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A52BD0A21BF2C6F200FABDFA;
+			remoteInfo = PeachyToday;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A52BD0B31BF2C6F200FABDFA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A52BD0AF1BF2C6F200FABDFA /* PeachyToday.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9405B8111BC080AC00F8D50B /* PeachyClima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeachyClima.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +94,11 @@
 		94C06C5F1BC09A2D005A7FAD /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift.framework"; sourceTree = "<group>"; };
 		94C06C621BC0A0C6005A7FAD /* Array+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Array+extensions.swift"; path = "utils/Array+extensions.swift"; sourceTree = "<group>"; };
 		94C06C641BC0A31A005A7FAD /* UIViewController+extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+extensions.swift"; path = "utils/UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		A52BD0A31BF2C6F200FABDFA /* PeachyToday.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PeachyToday.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A52BD0A41BF2C6F200FABDFA /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		A52BD0A71BF2C6F200FABDFA /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		A52BD0AA1BF2C6F200FABDFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		A52BD0AC1BF2C6F200FABDFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A550618E1BF17BBC00609752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5B01A401BF1CD0B00B3CCBA /* GothamCond-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamCond-Medium.otf"; sourceTree = "<group>"; };
 		DBF3E54D9D4F0619EAC8D5B2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +133,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A52BD0A01BF2C6F200FABDFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52BD0A51BF2C6F200FABDFA /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -107,6 +150,7 @@
 				9405B8131BC080AC00F8D50B /* PeachyClima */,
 				9405B8281BC080AC00F8D50B /* PichiClimaTests */,
 				9405B8331BC080AC00F8D50B /* PichiClimaUITests */,
+				A52BD0A61BF2C6F200FABDFA /* PeachyToday */,
 				9405B8121BC080AC00F8D50B /* Products */,
 				A43F0AB49895C16715ADC166 /* Pods */,
 				A2A5AE39747669F193D5615D /* Frameworks */,
@@ -119,6 +163,7 @@
 				9405B8111BC080AC00F8D50B /* PeachyClima.app */,
 				9405B8251BC080AC00F8D50B /* PeachyClima.xctest */,
 				9405B8301BC080AC00F8D50B /* PeachyClima.xctest */,
+				A52BD0A31BF2C6F200FABDFA /* PeachyToday.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -192,6 +237,7 @@
 				9436CB4F1BC083CC0033D6B2 /* Alamofire.framework */,
 				9436CB501BC083CC0033D6B2 /* SwiftyJSON.framework */,
 				FD0A1A27EA915B2A1D10CB81 /* Pods.framework */,
+				A52BD0A41BF2C6F200FABDFA /* NotificationCenter.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -203,6 +249,16 @@
 				FF1BC68D2614E54ED3BD3A30 /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A52BD0A61BF2C6F200FABDFA /* PeachyToday */ = {
+			isa = PBXGroup;
+			children = (
+				A52BD0A71BF2C6F200FABDFA /* TodayViewController.swift */,
+				A52BD0A91BF2C6F200FABDFA /* MainInterface.storyboard */,
+				A52BD0AC1BF2C6F200FABDFA /* Info.plist */,
+			);
+			path = PeachyToday;
 			sourceTree = "<group>";
 		};
 		A5B01A3C1BF19CCE00B3CCBA /* fonts */ = {
@@ -226,10 +282,12 @@
 				9405B80F1BC080AC00F8D50B /* Resources */,
 				5358D8E446AED6A160B8E5DC /* Embed Pods Frameworks */,
 				EBAFA518A8F6160A81CA1F43 /* Copy Pods Resources */,
+				A52BD0B31BF2C6F200FABDFA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A52BD0AE1BF2C6F200FABDFA /* PBXTargetDependency */,
 			);
 			name = PeachyClima;
 			productName = PichiClima;
@@ -272,12 +330,30 @@
 			productReference = 9405B8301BC080AC00F8D50B /* PeachyClima.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		A52BD0A21BF2C6F200FABDFA /* PeachyToday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A52BD0B21BF2C6F200FABDFA /* Build configuration list for PBXNativeTarget "PeachyToday" */;
+			buildPhases = (
+				A52BD09F1BF2C6F200FABDFA /* Sources */,
+				A52BD0A01BF2C6F200FABDFA /* Frameworks */,
+				A52BD0A11BF2C6F200FABDFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PeachyToday;
+			productName = PeachyToday;
+			productReference = A52BD0A31BF2C6F200FABDFA /* PeachyToday.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		9405B8091BC080AC00F8D50B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0710;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ernesto Cambuston";
 				TargetAttributes = {
@@ -298,6 +374,10 @@
 						CreatedOnToolsVersion = 7.0.1;
 						TestTargetID = 9405B8101BC080AC00F8D50B;
 					};
+					A52BD0A21BF2C6F200FABDFA = {
+						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = S4B46Y8N4E;
+					};
 				};
 			};
 			buildConfigurationList = 9405B80C1BC080AC00F8D50B /* Build configuration list for PBXProject "PeachyClima" */;
@@ -316,6 +396,7 @@
 				9405B8101BC080AC00F8D50B /* PeachyClima */,
 				9405B8241BC080AC00F8D50B /* PeachyClimaTests */,
 				9405B82F1BC080AC00F8D50B /* PeachyClimaUITests */,
+				A52BD0A21BF2C6F200FABDFA /* PeachyToday */,
 			);
 		};
 /* End PBXProject section */
@@ -343,6 +424,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A52BD0A11BF2C6F200FABDFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A59A3CBC1BF2D52D00A45CBC /* GothamCond-Medium.otf in Resources */,
+				A52BD0AB1BF2C6F200FABDFA /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +516,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A52BD09F1BF2C6F200FABDFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A52BD0B61BF2C9D900FABDFA /* UIViewController+extensions.swift in Sources */,
+				A52BD0B41BF2C90C00FABDFA /* Weather.swift in Sources */,
+				A52BD0A81BF2C6F200FABDFA /* TodayViewController.swift in Sources */,
+				A52852871BF2CD6B00E9E969 /* User.swift in Sources */,
+				A52BD0B51BF2C9D500FABDFA /* Array+extensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -438,6 +540,11 @@
 			isa = PBXTargetDependency;
 			target = 9405B8101BC080AC00F8D50B /* PeachyClima */;
 			targetProxy = 9405B8311BC080AC00F8D50B /* PBXContainerItemProxy */;
+		};
+		A52BD0AE1BF2C6F200FABDFA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A52BD0A21BF2C6F200FABDFA /* PeachyToday */;
+			targetProxy = A52BD0AD1BF2C6F200FABDFA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -456,6 +563,14 @@
 				9405B81E1BC080AC00F8D50B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A52BD0A91BF2C6F200FABDFA /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A52BD0AA1BF2C6F200FABDFA /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -549,6 +664,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -570,6 +686,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/build/Debug-iphoneos",
@@ -632,6 +749,34 @@
 			};
 			name = Release;
 		};
+		A52BD0B01BF2C6F200FABDFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PeachyToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinatasoftique.PeachyClima.PeachyToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		A52BD0B11BF2C6F200FABDFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = PeachyToday/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pinatasoftique.PeachyClima.PeachyToday;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -667,6 +812,15 @@
 			buildConfigurations = (
 				9405B8401BC080AC00F8D50B /* Debug */,
 				9405B8411BC080AC00F8D50B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A52BD0B21BF2C6F200FABDFA /* Build configuration list for PBXNativeTarget "PeachyToday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A52BD0B01BF2C6F200FABDFA /* Debug */,
+				A52BD0B11BF2C6F200FABDFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

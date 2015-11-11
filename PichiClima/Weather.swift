@@ -12,7 +12,7 @@ import SwiftyJSON
 import Alamofire
 import CoreLocation
 
-class Weather:Object {
+public class Weather:Object {
   dynamic var humidity = 0.0
   dynamic var icon = ""
   dynamic var condition = ""
